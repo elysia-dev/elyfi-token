@@ -1,0 +1,31 @@
+{
+  "name": "elyfi-governance",
+  "version": "1.0.0",
+  "description": "Elyfi Governance Implmentation",
+  "main": "index.js",
+  "author": "elysia-dev",
+  "license": "MIT",
+  "dependencies": {
+    "@typechain/ethers-v5": "^7.0.0",
+    "@typechain/web3-v1": "^3.0.0",
+    "hardhat-typechain": "^0.3.5",
+    "ts-generator": "^0.1.1",
+    "typechain": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.1.0",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.9.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.3.0",
+    "hardhat": "^2.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}

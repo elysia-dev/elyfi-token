@@ -22,13 +22,15 @@ ETHERSCAN_API_KEY=
 You can deploy ElyfiToken to the networks via the following command:
 
 ```
-yarn hardhat --network [binanceTestnet | binanceMainnet] scripts/deploy.ts
+yarn deploy:mainnet
+yarn deploy:testnet
 ```
 
 You can alwo verify automatically via the command:
 
 ```
-yarn hardhat verify --network [binanceTestnet | binanceMainnet] DEPLOYED_ADDRESS
+yarn verify:mainnet
+yarn verify:testnet
 ```
 
 ## Test

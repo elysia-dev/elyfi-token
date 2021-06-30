@@ -3,7 +3,6 @@ pragma solidity ^0.8.4;
 
 import '../access/ElyfiAccessControl.sol';
 import '@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol';
-import '@openzeppelin/contracts/access/AccessControl.sol';
 
 contract ElyfiToken is ERC20Snapshot, ElyfiAccessControl {
   uint256 internal constant TOTAL_SUPPLY = 100000000 ether;
@@ -15,5 +14,9 @@ contract ElyfiToken is ERC20Snapshot, ElyfiAccessControl {
 
   function snapshot() external onlySnapshotMaker returns (uint256) {
     return _snapshot();
+  }
+
+  function burn(uint256 amount) public virtual {
+    _burn(_msgSender(), amount);
   }
 }

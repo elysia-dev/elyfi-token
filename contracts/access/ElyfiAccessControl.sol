@@ -11,6 +11,11 @@ contract ElyfiAccessControl is AccessControl {
     _;
   }
 
+  modifier onlyAdmin() {
+    require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender), "Restricted to admin.");
+    _;
+  }
+
   function isSnapshotMaker(address account) external view returns (bool) {
     return _isSnapshotMaker(account);
   }
